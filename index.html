@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Motion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Events in Motion</h1>
+        <p>Explore the page using your mouse, keyboard, and touch!</p>
+    </header>
+
+    <main>
+        <!-- Clock -->
+        <section class="card">
+            <h2>🕒 Current Time</h2>
+            <p id="clock">Loading...</p>
+        </section>
+
+        <!-- Mouse interaction -->
+        <section class="card">
+            <h2>🖱️ Mouse Interaction</h2>
+            <p id="mouseMessage">Click the button to change the page theme.</p>
+            <button id="themeButton">Change Theme</button>
+        </section>
+
+        <!-- Keyboard interaction -->
+        <section class="card">
+            <h2>⌨️ Keyboard Interaction</h2>
+            <p id="keyboardMessage">
+                Press any key on your keyboard.
+            </p>
+        </section>
+
+        <!-- Window/BOM interaction -->
+        <section class="card">
+            <h2>🪟 Window Information</h2>
+            <p id="windowSize">Window size: loading...</p>
+        </section>
+
+       <!-- Touch interaction -->
+        <section class="card touch-card" id="touchArea">
+            <h2>👆 Touch Interaction</h2>
+            <p id="touchMessage">
+            Tap the button to see how many times you've touched it!
+            </p>
+            <button id="touchButton">Tap Me!</button>
+            <p id="touchCount">Taps: 0</p>
+        </section>
+
+        <!-- Local storage -->
+        <section class="card">
+            <h2>💾 Local Storage</h2>
+            <p id="visitMessage">Checking your visits...</p>
+            <button id="resetButton">Reset Visit Count</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Events in Motion • DOM & BOM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

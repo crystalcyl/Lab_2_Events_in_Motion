@@ -1,0 +1,107 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #222;
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: white;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #5b3c9d;
+}
+
+.card p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #4f63c4;
+    transform: scale(1.05);
+}
+
+/* Touch area */
+.touch-card {
+    cursor: pointer;
+    user-select: none;
+}
+
+.touch-card.active {
+    background: #ffe082;
+}
+
+/* Clock */
+#clock {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
